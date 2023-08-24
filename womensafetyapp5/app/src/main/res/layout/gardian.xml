@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F0F0"
+    tools:context=".Gardianupdate">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Guardian Update"
+        android:textColor="#FB0000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="416dp"
+        android:layout_height="611dp"
+        android:background="#F1F0F0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/txt_gname"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:hint="Gardian Name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#8E8D8D"
+            />
+
+        <EditText
+            android:id="@+id/txt_gnum"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:hint="Guardian Mobile Number"
+            android:inputType="phone"
+            android:paddingStart="20dp"
+            android:textColorHint="#8E8D8D" />
+
+        <Button
+            android:id="@+id/btn_done"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+
+            android:background="@drawable/btn_sinup"
+            android:text="Update"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="438dp"
+        android:layout_height="90dp"
+        android:background="#FEFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="1.0" />
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="#FAF8F8"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/home" />
+    <ImageButton
+        android:id="@+id/police_btn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/police" />
+
+    <ImageButton
+        android:id="@+id/profile_btn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="#FAFAFA"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:text="HOME"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn"
+        app:layout_constraintStart_toStartOf="@+id/home_btn"
+        app:layout_constraintTop_toBottomOf="@+id/home_btn"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="61dp"
+        android:background="@null"
+        android:ems="10"
+        android:text="POLICE"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/police_btn"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/police_btn"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="text"
+        android:text="PROFILE"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_btn"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/profile_btn"
+        app:layout_constraintStart_toStartOf="@+id/profile_btn"
+        app:layout_constraintTop_toBottomOf="@+id/profile_btn"
+        app:layout_constraintVertical_bias="1.0"
+        android:focusable="false"/>
+
+
+    <ImageButton
+        android:id="@+id/gaur_btn"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="24dp"
+        android:background="#F7F7F7"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/police_btn"
+        app:srcCompat="@drawable/gaur" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="text"
+        android:text="GUARDIAN"
+        android:textAlignment="center"
+
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/gaur_btn"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/gaur_btn"
+        app:layout_constraintTop_toTopOf="@+id/gaur_btn"
+        android:focusable="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

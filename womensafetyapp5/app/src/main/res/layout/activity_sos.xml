@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F0F0"
+    android:backgroundTint="#F1F0F0"
+    tools:context=".SOS">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_red_dark"
+        app:popupTheme="@style/Theme.Womensafetyapp.PopupOverlay" />
+
+
+    <ImageButton
+        android:id="@+id/sosButton"
+        android:layout_width="263dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="184dp"
+        android:background="#F1F0F0"
+        android:backgroundTint="#F1F0F0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.429"
+        app:srcCompat="@drawable/s" />
+
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="85dp"
+        android:layout_height="83dp"
+        android:background="#F1F0F0"
+        android:backgroundTint="#F1F0F0"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/sosButton"
+        app:layout_constraintVertical_bias="0.526"
+        app:srcCompat="@drawable/p" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="438dp"
+        android:layout_height="90dp"
+        android:background="#FEFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="#FAF8F8"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/police_btn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/police" />
+
+    <ImageButton
+        android:id="@+id/profile_btn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="#FAFAFA"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:text="HOME"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn"
+        app:layout_constraintStart_toStartOf="@+id/home_btn"
+        app:layout_constraintTop_toBottomOf="@+id/home_btn"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="61dp"
+        android:background="@null"
+        android:ems="10"
+        android:text="POLICE"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/police_btn"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/police_btn"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="text"
+        android:text="PROFILE"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_btn"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/profile_btn"
+        app:layout_constraintStart_toStartOf="@+id/profile_btn"
+        app:layout_constraintTop_toBottomOf="@+id/profile_btn"
+        app:layout_constraintVertical_bias="1.0"
+        android:focusable="false"/>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="112dp"
+        android:layout_height="12dp"
+        android:inputType="none"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/sosButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ImageButton
+        android:id="@+id/gaur_btn"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="24dp"
+        android:background="#F7F7F7"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/police_btn"
+        app:srcCompat="@drawable/gaur" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="text"
+        android:text="GUARDIAN"
+        android:textAlignment="center"
+
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/gaur_btn"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/gaur_btn"
+        app:layout_constraintTop_toTopOf="@+id/gaur_btn"
+        android:focusable="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

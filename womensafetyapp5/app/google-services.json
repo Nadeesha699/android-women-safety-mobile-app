@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905080294967",
+    "firebase_url": "https://women-safe-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "women-safe-app",
+    "storage_bucket": "women-safe-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905080294967:android:6eb8d3d379faf504a479b2",
+        "android_client_info": {
+          "package_name": "com.example.womensafetyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905080294967-9ls4l6oho6l8j2r38fl0edt9lh76ngbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB8i7tEXL8eQvz5XZFYe4IovXtsYDMecg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905080294967-9ls4l6oho6l8j2r38fl0edt9lh76ngbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
